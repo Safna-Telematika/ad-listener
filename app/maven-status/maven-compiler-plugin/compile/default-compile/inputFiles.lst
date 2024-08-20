@@ -28,13 +28,13 @@
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/resource/CardResource.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/resource/UserResource.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/result/MessageResult.java
-/Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/ActiveDirectoryService.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/DotenvConfig.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/FalcoService.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/GetAllUtils.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/InitializeApp.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/LDAPModify.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/LDAPSearch.java
+/Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/LDAPService.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/ScheduleService.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/service/SoapUtils.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/Body.java
@@ -51,6 +51,9 @@
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/adderror/Body.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/adderror/ErrorEnvelope.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/delete/DeleteCard.java
+/Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/delete/DeleteCardResponse.java
+/Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/delete/DeleteCardResult.java
+/Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/delete/DeleteEnvelope.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/getall/Card.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/getall/Diffgram.java
 /Users/sonywibisono/Projects/Active Directory/source/ad-listener/src/main/java/com/smartnet/ad/wsdl/getall/DocumentElement.java

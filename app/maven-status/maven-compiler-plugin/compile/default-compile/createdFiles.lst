@@ -14,9 +14,9 @@ com/smartnet/ad/wsdl/addcard/Envelope.class
 com/smartnet/ad/wsdl/DeleteCard.class
 com/smartnet/ad/wsdl/update/UpdateCard.class
 com/smartnet/ad/wsdl/getall/envelope/Envelope.class
-com/smartnet/ad/service/ActiveDirectoryService.class
 com/smartnet/ad/wsdl/getall/envelope/GetAllCardResult.class
 com/smartnet/ad/resource/CardResource.class
+com/smartnet/ad/wsdl/delete/DeleteEnvelope.class
 com/smartnet/ad/repository/SettingRepository.class
 com/smartnet/ad/repository/SyncLogRepository.class
 com/smartnet/ad/entity/CardProfiles.class
@@ -32,6 +32,7 @@ com/smartnet/ad/wsdl/getall/DocumentElement.class
 com/smartnet/ad/resource/UserResource.class
 com/smartnet/ad/wsdl/params/PostParams.class
 com/smartnet/ad/MainApp$MyApp.class
+com/smartnet/ad/service/LDAPService.class
 com/smartnet/ad/wsdl/DeleteBody.class
 com/smartnet/ad/jobs/MyJob.class
 com/smartnet/ad/wsdl/getall/Card.class
@@ -41,10 +42,12 @@ com/smartnet/ad/entity/AdOrganization.class
 com/smartnet/ad/repository/AdOrgRepository.class
 com/smartnet/ad/controller/SettingController.class
 com/smartnet/ad/wsdl/adderror/AddCardResult.class
+com/smartnet/ad/wsdl/delete/DeleteCardResponse.class
 com/smartnet/ad/proxy/VaultProxy.class
 com/smartnet/ad/service/SoapUtils.class
 com/smartnet/ad/controller/UserController.class
 com/smartnet/ad/entity/AdUser.class
+com/smartnet/ad/wsdl/delete/DeleteCardResult.class
 com/smartnet/ad/wsdl/getall/Diffgram.class
 com/smartnet/ad/wsdl/getall/envelope/Body.class
 com/smartnet/ad/wsdl/adderror/Body.class

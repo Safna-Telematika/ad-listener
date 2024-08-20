@@ -30,7 +30,7 @@ $('.delete').click(function(e){
     if(result.ErrCode==='0'){
                 swal("Good job!", result.ErrMessage, "success")
                 .then((result)=>{
-                    window.location = "/users";
+                    window.location = "/card";
                 });
         } else {
             swal("Sorry!", result.ErrMessage, "error");
@@ -59,7 +59,7 @@ $('#form_add').submit(function(e){
         if(result.ErrCode==='0'){
                 swal("Good job!", result.ErrMessage, "success")
                 .then((result)=>{
-                    window.location = "/users";
+                    window.location = "/card";
                 });
         } else {
             swal("Sorry!", result.ErrMessage, "error");
