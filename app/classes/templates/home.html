@@ -1,0 +1,166 @@
+{#include base}
+{#content}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Sync AD to AC</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">AD Listener</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ sample-page ] start -->
+            <div class="col-md-8 col-sm-6">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h5>Hello {username}</h5>
+                        <div class="card-header-right">
+                            <div class="btn-group card-option">
+                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="feather icon-more-horizontal"></i>
+                                </button>
+                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-item full-card"><a href="#!"><span><i
+                                                    class="feather icon-maximize"></i> maximize</span><span
+                                                style="display:none"><i class="feather icon-minimize"></i>
+                                                Restore</span></a></li>
+                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i
+                                                    class="feather icon-minus"></i> collapse</span><span
+                                                style="display:none"><i class="feather icon-plus"></i> expand</span></a>
+                                    </li>
+                                    <li class="dropdown-item reload-card"><a href="#!"><i
+                                                class="feather icon-refresh-cw"></i> reload</a></li>
+                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>
+                                            remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                Status Service :
+                            </div>
+                            <div class="col-md-6">
+                                {status_services}
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                Interval Sync :
+                            </div>
+                            <div class="col-md-5">
+
+                                <label for="lbl30">
+                                    <input id="lbl30" type="radio" name="inverval" value="30"/>
+                                    30 minutes
+                                </label>
+                                <label for="lbl60">
+                                    <input id="lbl60" type="radio" name="inverval" value="60"/>
+                                    60 minutes
+                                </label>
+                                <label for="lbl60">
+                                    <input id="lbl60" type="radio" name="inverval" value="120"/>
+                                    2 hours
+                                </label>
+
+
+                            </div>
+                            <div class="col-md-3">
+                                <input type="number" name="interval_customer" id="" placeholder="other">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                Last Sync :
+                            </div>
+                            <div class="col-md-4">
+                            {logTime}
+                            </div>
+                            <div class="col-md-4">
+                                <button id="btn_sync" class="btn btn-success">Synch Now</button>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                Log file saved to :
+                            </div>
+                            <div class="col-md-6">
+                                {logPath}
+                                <a href="/logs" class="btn btn-outline-danger">See Logs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-yellow">{user_count}</h4>
+                                <h6 class="text-muted m-b-0">All User</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-users f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-yellow">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <p class="text-white m-b-0">% change</p>
+                            </div>
+                            <div class="col-3 text-right">
+                                <i class="feather icon-trending-up text-white f-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-blue">{org_count}</h4>
+                                <h6 class="text-muted m-b-0">Organisasi</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-briefcase f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-blue">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <p class="text-white m-b-0">% change</p>
+                            </div>
+                            <div class="col-3 text-right">
+                                <i class="feather icon-trending-down text-white f-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ sample-page ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+        {/}
+{#script}
+<script src="/assets/js/home.js"></script>
+{/script}        

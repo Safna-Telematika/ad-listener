@@ -1,0 +1,47 @@
+{#include  base}
+{#content}
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+    <!-- [ breadcrumb ] start -->
+    <div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">Setelan</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/home"><i class="feather icon-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="/setting">Setelan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ breadcrumb ] end -->
+    <!-- [ Main Content ] start -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Setting <button class="btn btn-success"><i class="fa fa-gears"></i> Simpan</button></h2>
+
+    </div>
+                    <div class="card-body">
+                        <form id="form_setting" action="/setting/store" method="post">
+                            <table class="table table-hover">
+                                {#for item in settings}
+                                <tr>
+                                    <td><label for="{item.key}">{item.key.toUpperCase().replace("_"," ")}</label></td>
+                                    <td><input class="form-control" type="text" name="{item.key}" id="{item.key}" value="{item.value}"></td>
+                                </tr>
+                                {/for}
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- [ Main Content ] end -->
+{/}

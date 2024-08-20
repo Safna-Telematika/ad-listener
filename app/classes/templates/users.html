@@ -1,0 +1,102 @@
+{#include base}
+{#content}
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">User List</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/home"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Daftar Pengguna</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card user-profile-list">
+                    <div class="card-body">
+                        <div class="dt-responsive table-responsive">
+
+                            <table id="list-table" class="table nowrap dataTable" role="grid"
+                                aria-describedby="user-list-table_info">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="user-list-table" rowspan="1"
+                                            colspan="1" aria-sort="ascending"
+                                            aria-label="Name: activate to sort column descending"
+                                            style="width: 243.523px;">Name</th>
+                                        <th class="sorting" tabindex="0" aria-controls="user-list-table" rowspan="1"
+                                            colspan="1" aria-label="Position: activate to sort column ascending"
+                                            style="width: 241.594px;">Description</th>
+                                        <th class="sorting" tabindex="0" aria-controls="user-list-table" rowspan="1"
+                                            colspan="1" aria-label="Office: activate to sort column ascending"
+                                            style="width: 116.188px;">NIK</th>
+                                        <th class="sorting" tabindex="0" aria-controls="user-list-table" rowspan="1"
+                                            colspan="1" aria-label="Start date: activate to sort column ascending"
+                                            style="width: 121.586px;">Last Logon</th>
+                                        <th class="sorting" tabindex="0" aria-controls="user-list-table" rowspan="1"
+                                            colspan="1" aria-label="Status: activate to sort column ascending"
+                                            style="width: 82.9375px;">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {#for item in users}
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1">
+                                            <div class="d-inline-block align-middle">
+                                                <a href="/users/{item.id}/edit"><img src="/assets/images/user/avatar-4.jpg" alt="user image"
+                                                        class="img-radius align-top m-r-15" style="width:40px;"></a>
+                                                <div class="d-inline-block">
+                                                    <h6 class="m-b-0">{item.name}</h6>
+                                                    <p class="m-b-0">{item.mail}</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>{item.description}</td>
+                                        <td>{item.employeeID}</td>
+                                        <td>{item.primaryGroupID}</td>
+                                        <td>
+                                            <span class="badge badge-light-success">Active</span>
+                                            <div class="overlay-edit">
+                                                <button type="button" class="btn btn-icon btn-success cast"
+                                                    data-id="{item.id}"><i class="feather icon-cast"></i></button>
+                                                <button type="button" class="btn btn-icon btn-danger delete"
+                                                    data-id="{item.employeeID}"><i class="feather icon-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    {/}
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">Name</th>
+                                        <th rowspan="1" colspan="1">Description</th>
+                                        <th rowspan="1" colspan="1">NIK</th>
+                                        <th rowspan="1" colspan="1">Last Logon</th>
+                                        <th rowspan="1" colspan="1">Status</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+        {/}
+        {#script}
+        {#include datatable}{/}
+        <script src="/assets/js/datatable.js?ver=1.0"></script>
+        <script src="/assets/js/ad_user.js?ver=1.0"></script>
+        {/}
